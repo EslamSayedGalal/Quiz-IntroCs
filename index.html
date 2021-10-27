@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Introduction to CS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="images/logo.jpeg" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <div class="toggle">
+        <input type="checkbox" id="toggleBtn" />
+        <label for="toggleBtn">
+          <span class="toggle-icon">
+            <img src="images/sun.svg" alt="sun icon" class="icon sun" />
+            <img src="images/moon.svg" alt="moon icon" class="icon moon" />
+          </span>
+        </label>
+    </div>
+
+
+    <!-- start quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Quiz Rules-->
+    <div class="info_box">
+        <div class="info_title"><span>Some Rules Of This Quiz</span></div>
+        <div class="info_list">
+            <div class="info">1. You Will Have Only
+                <Span>15 seconds</Span> per each question.
+            </div>
+            <div class="info">2. Once You Select Your Answer, can't be undone.</div>
+            <div class="info">3. You Can't Select Any Option Once Time Goes Off.</div>
+            <div class="info">4. You Can't Exit From The Quiz While You Are Playing</div>
+            <div class="info">5. You Will Get Points On The Basis Of Your Correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz Computer Science</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- here i inserted question from database -->
+            </div>
+            <div class="option_list">
+                <!-- here i inserted options from database -->
+            </div>
+        </section>
+
+        <!-- footer of quiz box -->
+        <footer>
+            <div class="total_que">
+                <!-- here i insert question count from database -->
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!-- Result Quiz Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You have Completed The Quiz!</div>
+        <div class="score_text">
+            <!-- here i insert score result of quiz -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Exit Quiz</button>
+        </div>
+    </div>
+
+    <!-- inside this js file i insert questions and options only -->
+    <script src="JavaScript/questions.js"></script>
+
+    <!-- inside this js file i insert the coding -->
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
+
+</html>
